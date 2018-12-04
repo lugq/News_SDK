@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_practice"
+        android:icon="@drawable/ic_index_home"
+        android:title="@string/practive" />
+
+    <item
+        android:id="@+id/navigation_style"
+        android:icon="@drawable/ic_brightness_3_black_24dp"
+        android:title="@string/style" />
+
+    <item
+        android:id="@+id/navigation_using"
+        android:icon="@drawable/ic_index_notifications"
+        android:title="@string/using" />
+</menu>

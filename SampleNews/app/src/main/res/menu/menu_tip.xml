@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_suc_tip"
+        android:title="设置推荐成功提示语"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_color"
+        android:title="设置无推荐提示语"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_bg_color"
+        android:title="设置提示语背景"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_layout_height"
+        android:title="设置提示语颜色"
+        app:showAsAction="never" />
+
+</menu>

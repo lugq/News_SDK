@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">botbrain_feed_sdk</string>
+
+    <string name="day">日间模式</string>
+    <string name="night">夜间模式</string>
+
+    <string name="practive">实战</string>
+    <string name="style">样式</string>
+    <string name="using">使用</string>
+
+    <string name="title_tip">设置刷新后的提示</string>
+
+</resources>

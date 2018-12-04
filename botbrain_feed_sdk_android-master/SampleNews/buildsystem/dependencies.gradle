@@ -1,0 +1,102 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    //Android
+    androidBuildToolsVersion = "25.0.1"
+    androidMinSdkVersion = 15
+    androidTargetSdkVersion = 25
+    androidCompileSdkVersion = 25
+
+    //Libraries
+    gsonVersion = '2.8.0'
+    universalimageloaderVersion = '1.9.5'
+    supportDesign = '25.1.0'
+    supportV4Version = '25.1.0'
+    appcompatV7Version = '26.1.0'
+    imagepickerVersion = '0.5.5'
+    glideVersion = '3.7.0'
+    fastjsonVersion = '1.1.56.android'
+    bgaRefreshVersion = '1.1.7'
+    kprogresshudVersion = '1.1.0'
+    okgoVersion = '3.0.4'
+    okhttpVersion = '3.8.1'
+    eventbusVersion = '3.0.0'
+    sgproxyActivityVersion = '0.1.6'
+    rxJavaVersion = '2.0.2'
+    rxAndroidVersion = '2.0.1'
+    injectVersion = '1'
+
+    //Test
+    jUnitVersion = '4.12'
+    robolectricVersion = '3.2.2'
+
+    //Development
+    releaseLeakCanaryVersion = '1.5'
+    debugLeakCanaryVersion = '1.5'
+
+    libraryTtcDependencies = [
+            supportV4:              "com.android.support:support-v4:${supportV4Version}",
+            appcompatV7:            "com.android.support:appcompat-v7:${appcompatV7Version}",
+            supportDesign:          "com.android.support:design:${supportDesign}",
+
+            gson:                   "com.google.code.gson:gson:${gsonVersion}",
+            glide:                  "com.github.bumptech.glide:glide:${glideVersion}",
+            //glideAnno:              "com.github.bumptech.glide:compiler:${glideAnnoVersion}",
+            bgaRefresh:             "cn.bingoogolapple:bga-refreshlayout:${bgaRefreshVersion}",
+            okgo:                   "com.lzy.net:okgo:${okgoVersion}",
+            okhttp:                 "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            eventbus:               "org.greenrobot:eventbus:${eventbusVersion}",
+
+            // 视频独有
+            fastjson:               "com.alibaba:fastjson:${fastjsonVersion}",
+            sgproxyActivity:        "com.youku.cloud.player.ui:SGProxyActivity:${sgproxyActivityVersion}",
+            universalimageloader:   "com.nostra13.universalimageloader:universal-image-loader:${universalimageloaderVersion}",
+    ]
+
+    libraryTtcTestDependencies = [
+            jUnit:                  "junit:junit:${jUnitVersion}",
+            robolectric:            "org.robolectric:robolectric:${robolectricVersion}"
+    ]
+
+    dataDependencies = [
+            supportV4:              "com.android.support:support-v4:${supportV4Version}",
+            appcompatV7:            "com.android.support:appcompat-v7:${appcompatV7Version}",
+            okgo:                   "com.lzy.net:okgo:${okgoVersion}",
+            okhttp:                 "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            rxandroid:              "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            inject:                 "javax.inject:javax.inject:${injectVersion}"
+    ]
+
+    developmentDependencies = [
+            releaseLeakCanary:      "com.squareup.leakcanary:leakcanary-android-no-op:${releaseLeakCanaryVersion}",
+            debugLeakCanary:        "com.squareup.leakcanary:leakcanary-android:${debugLeakCanaryVersion}"
+    ]
+
+    appTtcloudDependencies = [
+            appcompatV7:            "com.android.support:appcompat-v7:${appcompatV7Version}",
+            supportV4:              "com.android.support:support-v4:${supportV4Version}",
+            supportDesign:          "com.android.support:design:${supportDesign}",
+
+            gson:                   "com.google.code.gson:gson:${gsonVersion}",
+            kprogresshud:           "com.kaopiz:kprogresshud:${kprogresshudVersion}",
+            imagepicker:            "com.lzy.widget:imagepicker:${imagepickerVersion}",
+            okgo:                   "com.lzy.net:okgo:${okgoVersion}",
+            eventbus:               "org.greenrobot:eventbus:${eventbusVersion}",
+            sgproxyActivity:        "com.youku.cloud.player.ui:SGProxyActivity:${sgproxyActivityVersion}",
+    ]
+
+    appTtcloudTestDependencies = [
+            jUnit:                  "junit:junit:${jUnitVersion}",
+            robolectric:            "org.robolectric:robolectric:${robolectricVersion}"
+    ]
+
+    appSampleDemoDependencies = [
+            appcompatV7:            "com.android.support:appcompat-v7:${appcompatV7Version}",
+            okgo:                   "com.lzy.net:okgo:${okgoVersion}",
+            okhttp:                 "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+    ]
+}

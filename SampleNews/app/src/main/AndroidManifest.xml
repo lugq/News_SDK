@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.botbrain.demo">
+
+    <application
+        android:name="com.botbrain.demo.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_child_care_black_24dp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--
+        android:networkSecurityConfig="@xml/network_security_config"
+        -->
+
+        <!-- 设置申请的 AppId -->
+        <meta-data android:name="TTC_APPID" android:value="S4EBUTASGJ" />
+
+        <activity android:name="com.botbrain.demo.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.botbrain.demo.activity.BasicActivity" android:theme="@style/AppTheme" />
+
+        <activity android:name="com.botbrain.demo.activity.AdSettingActivity"/>
+        <activity android:name="com.botbrain.demo.activity.NewsListActivity"/>
+        <activity android:name="com.botbrain.demo.activity.TabLayoutStyleActivity"/>
+        <activity android:name="com.botbrain.demo.activity.style.TipsStyleActivity"/>
+        <activity android:name="com.botbrain.demo.activity.style.ToolBarStyleActivity"/>
+    </application>
+
+</manifest>

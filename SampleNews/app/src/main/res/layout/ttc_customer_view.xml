@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_qq_one_small"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/tsd_article_item_padding_bottom"
+    android:paddingTop="@dimen/tsd_article_item_padding_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/item_title"
+            style="@style/tsd_article_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:textColor="#fa0101"
+            tools:text="自定义添加广告视图" />
+
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="@dimen/tsd_article_right_image_width"
+            android:layout_height="@dimen/tsd_article_right_image_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/tsd_des"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec" />
+
+</LinearLayout>

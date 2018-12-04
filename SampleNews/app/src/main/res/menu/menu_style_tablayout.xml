@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_hide"
+        android:title="隐藏TabLayout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_size"
+        android:title="修改字体"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_color"
+        android:title="修改颜色"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_bg_color"
+        android:title="设置背景颜色"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_layout_height"
+        android:title="设置滑动标签控件高度"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_indicator_height"
+        android:title="设置指示器高度"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_space"
+        android:title="设置间隔"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_indicator_color"
+        android:title="设置指示器颜色"
+        app:showAsAction="never" />
+</menu>
